@@ -9,7 +9,6 @@ const cors = require("cors");
 // const multer = require("multer");
 // const path = require("path");
 
-const applicationRoute = require("./route/applicantRoutes");
 const userRoute = require("./route/userRoute");
 
 const port = process.env.PORT || 5000;
@@ -33,7 +32,6 @@ app.use(cors(corsOptions)); //to syncronize front and backenth
 // app.use(cookieParser());
 
 // ROUTES
-app.use("/api/applications", applicationRoute);
 app.use("/api/users", userRoute);
 
 //database connection
