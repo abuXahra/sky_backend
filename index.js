@@ -14,7 +14,7 @@ const userRoute = require("./route/userRoute");
 const port = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://skymemorialforum.onrender.com/"],
+  origin: ["http://localhost:3000", "https://skymemorialforum.onrender.com"],
   // methods: ["POST", "GET"],
   credentials: true,
 };
